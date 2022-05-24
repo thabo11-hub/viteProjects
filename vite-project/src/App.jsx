@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Component, useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Add from "./components/add.component";
 import Dashbourd from "./components/dashboard.component";
@@ -6,9 +6,9 @@ import List from "./components/list.component";
 import logo from './logo.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+class App extends Component {
+  // const [count, setCount] = useState(0)
+  render(){
   return (
     <>
       {/* <div className="App">
@@ -38,5 +38,6 @@ function App() {
     </>
   )
 }
+}
 
-export default App
+export default App;
